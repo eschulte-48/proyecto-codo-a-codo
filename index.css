@@ -1,9 +1,15 @@
 h1{
-    color:white
+    color:white;
+}
+#escudo{
+    text-align: center;
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    /*opacity: 0.5;*/
 }
 header{
     color: white;
 }
+
 body{
-    background-color: blueviolet;
+    background-color: rgb(207, 79, 207);
 }

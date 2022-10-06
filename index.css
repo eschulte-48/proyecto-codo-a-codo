@@ -6,9 +6,53 @@ h1{
     /*background-color: rgba(0, 0, 0, 0.8);*/
     /*opacity: 0.5;*/
 }
-header{
-    color: white;
+
+#main-header {
+	background: rgb(154, 9, 154);
+	color: rgb(108, 239, 101);
+	height: 80px;
+}	
+	#main-header a {
+		color: white;
+	}
+
+/*
+ * Navegación
+ */
+ nav {
+	float: right;
 }
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+				nav ul li a:hover {
+					background: #0b76a6;
+				}
+.boton {
+    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #2e518b; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    }
 
 body{
     background-color: rgb(207, 79, 207);

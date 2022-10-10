@@ -55,5 +55,18 @@ h1{
     }
 
 body{
+	font-family: 'Inter', sans-serif;
     background-color: rgb(207, 79, 207);
 }
+
+@keyframes rotate3d {from {transform: rotate3d(0,0,0,0);}
+		to {transform: rotate3d(0,1,0,360deg);}}
+	/*@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+	  to {-webkit-transform: rotate(360deg);}}*/
+	.imgr{
+		width: 30%;
+		-webkit-animation: 2s rotate3d linear infinite;
+		animation: 2s rotate3d linear infinite;
+		/*-webkit-transform-origin:*/ 
+		transform-origin: center;
+	}

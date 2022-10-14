@@ -70,3 +70,10 @@ body{
 		/*-webkit-transform-origin:*/ 
 		transform-origin: center;
 	}
+	h2{
+	color: white;
+	}
+
+	form{
+		color: white;
+	}

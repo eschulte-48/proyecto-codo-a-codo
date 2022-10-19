@@ -1,11 +1,8 @@
-h1{
+h1 {
+	text-align: center;
     color:white;
 }
-#escudo{
-    text-align: center;
-    /*background-color: rgba(0, 0, 0, 0.8);*/
-    /*opacity: 0.5;*/
-}
+
 
 #main-header {
 	background: rgb(154, 9, 154);
@@ -15,6 +12,60 @@ h1{
 	#main-header a {
 		color: white;
 	}
+
+
+.carrusel {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+
+}
+
+.carrusel ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	max-width: 1000px;
+}
+
+.carrusel-fotos {
+	display: flex;
+	gap: 5px;
+	overflow: auto;
+}
+
+.carrusel-fotos img {
+	background: black;
+	border: 5px solid black ;
+	width: auto;
+	height: auto;
+	max-width: 300px;
+	max-height: 200px;
+	object-fit: contain;
+}
+
+.carrusel-menu{
+	display: none;
+}
+
+@media (min-width: 500px) {
+	.carrusel-fotos {
+		overflow: hidden;
+	}
+	.carrusel-fotos img {
+		width: 400px;
+		height: 300px;
+	}
+	.carrusel-menu {
+		display: block;
+	}
+	.carrusel-menu img {
+		width: 40px;
+		height: 30px;
+		border: 3px solid black;
+	}
+	
+}
 
 /*
  * Navegación

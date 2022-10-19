@@ -1,5 +1,13 @@
 body{
 	font-family: 'Inter', sans-serif;
-    background-color: rgb(233, 168, 233);
+    background-color: rgb(255, 255, 255);
 }
 
+.titulo {
+    text-align: center;
+    color: black;
+}
+
+.imagen {
+    
+}

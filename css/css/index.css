@@ -172,9 +172,8 @@ header .logo {
 	
 }
 
-
-<<<<<<< HEAD:index.css
-=======
+	h1{
+		text-align: center;
 	}
 	h2{
 	color: white;
@@ -182,5 +181,4 @@ header .logo {
 
 	form{
 		color: white;
->>>>>>> a43ce84b538f39b40d4b76798702aaa80e97d648:css/css/index.css
 	}

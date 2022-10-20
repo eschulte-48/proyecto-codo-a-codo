@@ -1,20 +1,124 @@
-h1 {
-	text-align: center;
-    color:white;
+
+*{
+	margin:0; padding: 0;
 }
 
 
-#main-header {
+body{
+	font-family: 'Inter', sans-serif;
+    background-color: rgb(207, 79, 207);
+}
+
+
+header {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 20px ;
 	background: rgb(154, 9, 154);
-	color: rgb(108, 239, 101);
-	height: 80px;
+	
+	height: auto;
 }	
-	#main-header a {
+header a {
 		color: white;
+	}
+
+.wrapper {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+} /*para centrar contenido */
+
+header .logo {
+	color: rgb(108, 239, 101);
+	font-size: 40px;
+	line-height: 100px;
+	float: left;
+}
+
+/*
+ * Navegación
+ */
+ nav {
+	float: right;
+	line-height: 100px;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 10px 20px;
+				text-decoration: none;
+				line-height: normal;
+				font-size: 20px;
+				font-weight: bold;
+				-webkit-transition: all 500ms ease ;
+				-o-transition:all 500ms ease ;
+				transition:all 500ms ease ;
+			}
+			
+				nav ul li a:hover {
+					background: #2ba609;
+					border-radius: 50px;
+
+				}
+.header2 {
+	position: fixed;
+	height: 50px;
+	}
+
+.header2 .logo {
+	line-height: 50px ;
+	font-size: 20px;
+}
+
+.header2 nav {
+	line-height: 50px;
+}
+
+/* adaptable a dispositivos móviles*/
+@media screen and (max-width: 882px) {
+	header .logo,
+	header nav {
+		width:100%;
+		text-align: center;
+		line-height:50px;
+	}
+	.header2 {
+		height: auto;
+	}
+	.header2 .logo,
+	.header2 nav {
+		line-height: 20px;
+	}
+}
+
+
+@keyframes rotate3d {from {transform: rotate3d(0,0,0,0);}
+		to {transform: rotate3d(0,1,0,360deg);}}
+	/*@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+	  to {-webkit-transform: rotate(360deg);}}*/
+	.imgr{
+		width: 30%;
+		-webkit-animation: 2s rotate3d linear infinite;
+		animation: 2s rotate3d linear infinite;
+		/*-webkit-transform-origin:*/ 
+		transform-origin: center;
 	}
 
 
 .carrusel {
+	margin-top: 50px;
 	display: flex;
 	gap: 10px;
 	justify-content: center;
@@ -48,7 +152,8 @@ h1 {
 	display: none;
 }
 
-@media (min-width: 500px) {
+@media screen and (min-width: 500px) {
+	
 	.carrusel-fotos {
 		overflow: hidden;
 	}
@@ -67,59 +172,7 @@ h1 {
 	
 }
 
-/*
- * Navegación
- */
- nav {
-	float: right;
-}
-	nav ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		padding-right: 20px;
-	}
-	
-		nav ul li {
-			display: inline-block;
-			line-height: 80px;
-		}
-			
-			nav ul li a {
-				display: block;
-				padding: 0 10px;
-				text-decoration: none;
-			}
-			
-				nav ul li a:hover {
-					background: #0b76a6;
-				}
-.boton {
-    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
-    padding: 10px; /*espacio alrededor texto*/
-    background-color: #2e518b; /*color botón*/
-    color: #ffffff; /*color texto*/
-    text-decoration: none; /*decoración texto*/
-    text-transform: uppercase; /*capitalización texto*/
-    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
-    border-radius: 50px; /*bordes redondos*/
-    }
 
-body{
-	font-family: 'Inter', sans-serif;
-    background-color: rgb(207, 79, 207);
-}
-
-@keyframes rotate3d {from {transform: rotate3d(0,0,0,0);}
-		to {transform: rotate3d(0,1,0,360deg);}}
-	/*@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
-	  to {-webkit-transform: rotate(360deg);}}*/
-	.imgr{
-		width: 30%;
-		-webkit-animation: 2s rotate3d linear infinite;
-		animation: 2s rotate3d linear infinite;
-		/*-webkit-transform-origin:*/ 
-		transform-origin: center;
 <<<<<<< HEAD:index.css
 =======
 	}

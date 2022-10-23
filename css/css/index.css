@@ -15,8 +15,8 @@ header {
 	overflow: hidden;
 	margin-bottom: 20px ;
 	background: rgb(154, 9, 154);
-	
 	height: auto;
+	position: fixed;
 }	
 header a {
 		color: white;
@@ -30,7 +30,7 @@ header a {
 } /*para centrar contenido */
 
 header .logo {
-	color: rgb(108, 239, 101);
+	color: rgb(53, 163, 47);
 	font-size: 40px;
 	line-height: 100px;
 	float: left;
@@ -73,7 +73,7 @@ header .logo {
 
 				}
 .header2 {
-	position: fixed;
+	position: inherit;
 	height: 50px;
 	}
 
@@ -172,13 +172,15 @@ header .logo {
 	
 }
 
-	h1{
+	.galeria{
 		text-align: center;
+		position: relative;
+		top: 150px;
+
 	}
+	
 	h2{
 	color: white;
 	}
 
-	form{
-		color: white;
-	}
+	

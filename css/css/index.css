@@ -7,7 +7,7 @@
 
 body{
 	font-family: 'Inter', sans-serif;
-    background-color: rgb(207, 79, 207);
+    background-color: #fff;
 }
 
 
@@ -21,11 +21,15 @@ header {
 	transition: 0.7s;
 	padding: 20px 20px;
 	
+	z-index:10;
+	
 }	
 header.abajo{
-	background-color:black ;
+	background-color:rgb(154, 9, 154);
 	padding: 5px 10px;
+	
 }
+
 header a {
 		color: white;
 	}
@@ -38,7 +42,7 @@ header a {
 } 
 
 header .logo {
-	color: rgb(53, 163, 47);
+	color: #fff;
 	font-size: 40px;
 	line-height: 100px;
 	float: left;
@@ -80,7 +84,7 @@ header .logo {
 			}
 			
 				nav ul li a:hover {
-					background: #2ba609;
+					background:  #215a11;
 					border-radius: 50px;
 
 				}
@@ -139,8 +143,8 @@ header .logo {
 }
 
 .carrusel-fotos img {
-	background: black;
-	border: 5px solid black ;
+	background: rgb(154, 9, 154);
+	border: 5px solid rgb(154, 9, 154) ;
 	width: auto;
 	height: auto;
 	max-width: 300px;
@@ -167,7 +171,7 @@ header .logo {
 	.carrusel-menu img {
 		width: 40px;
 		height: 30px;
-		border: 3px solid black;
+		border: 3px solid rgb(154, 9, 154);
 	}
 	
 }
@@ -184,4 +188,7 @@ header .logo {
 	color: white;
 	}
 
-	
+	h1{
+		color: #fff;
+		background-color: #215a11;
+	}

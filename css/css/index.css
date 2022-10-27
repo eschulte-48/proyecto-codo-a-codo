@@ -12,7 +12,9 @@ body{
 }
 
 
+
 header {
+	font-size: medium;
 	width: 100%;
 	overflow: hidden;
 	margin-bottom: 15px ;
@@ -26,6 +28,7 @@ header {
 	
 }	
 header.abajo{
+	font-size: small;
 	background-color:rgb(154, 9, 154);
 	padding: 5px 10px;
 	
@@ -33,6 +36,7 @@ header.abajo{
 
 header a {
 		color: white;
+		font-size: medium;
 	}
 
 .wrapper {
@@ -114,9 +118,9 @@ header .logo {
 	/*@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
 	  to {-webkit-transform: rotate(360deg);}}*/
 	.imgr{
-		width: 30%;
+		width: 8%;
 		-webkit-animation: 2s rotate3d linear infinite;
-		animation: 2s rotate3d linear infinite;
+		animation: 3s rotate3d linear infinite;
 		/*-webkit-transform-origin:*/ 
 		transform-origin: center;
 	}

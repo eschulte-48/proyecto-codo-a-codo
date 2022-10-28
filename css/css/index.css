@@ -8,7 +8,11 @@
 
 body{
 	font-family: 'Inter', sans-serif;
-    background-color: #fff;
+	background-image: url(cancha-fondo.webp);
+	background-color: transparent;
+	height: 50%;
+	background-position-x: center;
+	
 }
 
 
@@ -132,6 +136,8 @@ header a {
 }
 
 .texto {
+	background-color: whitesmoke;
+	opacity: 0.8;
 	padding: 10px 10px;
 	font-size: 15px;
 }
@@ -190,27 +196,44 @@ header a {
 .contenido {
 	margin: 0 15%;
 	display: none;
-	width: 780px;
+	width: 70%;
+
 	overflow: hidden;
 	transition: 0.5s;
 }
+.test {
+	border: solid blue;
+	text-align: center;
+	margin-top: 10px;
+	height: 70%;
 
+}
 
+.test img {
+	border: solid black;
+	position: relative;
+	width: 50%;
+
+}
+
+/*
 .contenido img {
 	margin-top: 10px;
 	width: auto;
 	height: auto;
-	max-width: 250px;
-	max-height: 200px;
-}
+	max-width: 200px;
+	max-height: 150px;
+}*/
 
-.contenido p {
+.test p {
+	position: relative;
+	border: solid red;
+	background-color:  whitesmoke;
+	opacity: 0.8;
 	margin-top: 10px;
-	display: inline-flex;
-	vertical-align: top;
+	width: 50%;
+
 }
-
-
 
 
 .carrusel-fotos {

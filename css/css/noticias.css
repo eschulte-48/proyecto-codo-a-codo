@@ -131,3 +131,12 @@ nav ul {
 li {
     list-style: none;
 }
+footer {
+    background-color: rgb(154, 9, 154);
+    
+}
+
+.imgf{
+    display: flex;
+    margin: auto;
+}

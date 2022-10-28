@@ -336,7 +336,7 @@ padding: 10px 10px;
 		}
 	#logo {
 		font-size: 15px;
-		width: %;
+		width: 1%;
 		text-align: left;
 		line-height:10px;
 		padding: 10px 10px;
@@ -404,5 +404,55 @@ padding: 10px 10px;
 		max-height: 150px;
 		object-fit: contain;
 	}
-
+	
+	form{
+		background-color: #215a11;
+		width: 400px;
+		top: 50%;
+		left: 50%;
+		margin: auto;
+		box-shadow: 7px 13px 37px;
+	
 	}
+	
+	.form{
+		padding: .8rem;
+		overflow: hidden;
+		color: white;
+	}
+	
+	.form label, .form input{
+		display: block;
+		width: 100%;
+		margin-bottom: 8px;
+	}
+	
+	.form label {
+		font-weight: 700;
+	}
+	
+	.form input :no-button{
+		border: none;
+		border-bottom: 2px solid rgb(154, 9, 154);
+		margin-bottom: 10px;
+		font-size: 20px;
+		outline: none;
+		color: #fff;
+	}
+	
+	.form [type="submit"]{
+		padding: 10px;
+		border: none;
+		color: #fff;
+		background-color: rgb(154, 9, 154);}
+	
+	footer {
+		background-color: rgb(154, 9, 154);
+		
+	}
+	
+	.imgf{
+		display: flex;
+		margin: auto;
+	}
+}

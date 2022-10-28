@@ -9,7 +9,6 @@
 body{
 	font-family: 'Inter', sans-serif;
 	background-image: url(cancha-fondo.webp);
-	background-color: transparent;
 	height: 50%;
 	background-position-x: center;
 	
@@ -45,13 +44,6 @@ header a {
 		color: white;
 	}
 
-.wrapper {
-	border: solid black;
-	width: 90%;
-	max-width: 1000px;
-	margin: auto;
-	overflow: hidden;
-} 
 
 #logo {
 	width: 30%;
@@ -107,25 +99,6 @@ header a {
 
 
 
-
-
-
-
-.carrusel {
-	margin-top: 50px;
-	display: flex;
-	gap: 10px;
-	justify-content: center;
-
-}
-
-.carrusel ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	max-width: 1000px;
-}
-
 .reseña {
 	font-size: larger;
 	text-align: center;
@@ -133,12 +106,13 @@ header a {
 	margin-top: 15%;
 	background-color: #215a11;
 	color: white;
+	padding: 10px 10px;
 }
 
 .texto {
 	background-color: whitesmoke;
 	opacity: 0.8;
-	padding: 10px 10px;
+	padding: 20px 20px;
 	font-size: 15px;
 }
 
@@ -150,14 +124,13 @@ header a {
 	margin-top: 15px;
 	background-color: #215a11;
 	color: white;
+	padding: 10px 10px;
 }
 
 .principal h2{
 	color:black;
 
 }
-
-
 
 .posiciones {
 	border: none;
@@ -171,6 +144,7 @@ header a {
 	background-color: #215a11;
 	color: white;
 	font-size: larger;
+	font-weight: bold;
 	cursor: pointer;
 }
 
@@ -202,19 +176,51 @@ header a {
 	transition: 0.5s;
 }
 .test {
-	border: solid blue;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	height: 70%;
+
+}
+
+.test img {
+	position: relative;
+	width: 40%;
+
+}
+
+.test p {
+	position: relative;
+	background-color:  whitesmoke;
+	opacity: 0.7;
+	margin-top: 10px;
+	margin: 0 30% ;
+	width: 40%;
+
+}
+.test1 {
 	text-align: center;
 	margin-top: 10px;
 	height: 70%;
 
 }
 
-.test img {
-	border: solid black;
+.test1 img {
 	position: relative;
-	width: 50%;
+	width: 25%;
 
 }
+
+.test1 p {
+	position: relative;
+	background-color:  whitesmoke;
+	opacity: 0.8;
+	margin-top: 10px;
+	margin: 0 30% ;
+	width: 40%;
+
+}
+
 
 /*
 .contenido img {
@@ -225,17 +231,42 @@ header a {
 	max-height: 150px;
 }*/
 
-.test p {
-	position: relative;
-	border: solid red;
-	background-color:  whitesmoke;
-	opacity: 0.8;
-	margin-top: 10px;
-	width: 50%;
+.texto-galeria {
+		width: 50%;
+		border-radius: 50px;
+		margin: 40px 25%;
+		font-weight: bold;
+		text-align: center;
+		background-color: whitesmoke;
+		opacity: 0.8;
+		padding: 10px 10px;
+		font-size: 15px;
+		display: flex;
+		}
 
-}
-
-
+.carrusel {
+			margin-top: 20px;
+			display: flex;
+			gap: 10px;
+			justify-content: center;
+		
+		}
+		
+.wrapper {
+	margin: auto;
+	width: 90%;
+	max-width: 1000px;
+	overflow: hidden;
+padding: 10px 10px;
+	} 
+		
+.carrusel ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			max-width: 1000px;
+		}
+	
 .carrusel-fotos {
 	display: flex;
 	gap: 5px;
@@ -243,14 +274,14 @@ header a {
 }
 
 .carrusel-fotos img {
-	background: rgb(154, 9, 154);
-	border: 5px solid rgb(154, 9, 154) ;
+	background-color: gray;
 	width: auto;
 	height: auto;
-	max-width: 300px;
-	max-height: 200px;
+	max-width: 350Px;
+	max-height: 250px;
 	object-fit: contain;
 }
+
 
 .carrusel-menu{
 	display: none;
@@ -271,7 +302,6 @@ header a {
 	.carrusel-menu img {
 		width: 40px;
 		height: 30px;
-		border: 3px solid rgb(154, 9, 154);
 	}
 	
 }
@@ -280,20 +310,24 @@ header a {
 	.galeria{
 		text-align: center;
 		position: relative;
-		top: 150px;
+		top: 10px;
 		width: 100%;
 		height: 100vh;
-	}
-	
-	h2{
-	color: white;
+		font-size: 15px ;
+		
 	}
 
-	h1{
-		color: #fff;
+	.galeria h1 {
+		font-size: larger;
+		text-align: center;
+		position: relative;
 		background-color: #215a11;
+		color: white;
+		padding: 10px 10px;
 	}
-	
+
+
+
 /* adaptable a dispositivos móviles*/
 @media screen and (max-width: 882px) {
 	header {
@@ -354,6 +388,21 @@ header a {
 	}
 	.texto {
 		font-size: 10px;
+	}
+
+	.texto-galeria p {
+		font-size: 10px;
+		padding: 10px 10px;
+	}
+
+	.carrusel-fotos img {
+		background: rgb(154, 9, 154);
+		border: 5px solid rgb(154, 9, 154) ;
+		width: auto;
+		height: auto;
+		max-width: 250px;
+		max-height: 150px;
+		object-fit: contain;
 	}
 
 	}

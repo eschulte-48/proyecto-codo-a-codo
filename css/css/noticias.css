@@ -1,9 +1,16 @@
 *{
 	margin:0; 
-	padding: 0;
+}
+
+
+html {
+    min-height: 100%;
+    position: relative ;
 }
 
 body{
+    margin: 0;
+    margin-bottom: 40px;
 	font-family: 'Playfair Display', serif;
     background-color: rgb(248, 217, 248);
 }
@@ -12,6 +19,7 @@ body{
 
 header {
 	font-size: medium;
+    font-family: 'Inter', sans-serif;
 	width: 100%;
 	overflow: hidden;
 	margin-bottom: 15px ;
@@ -24,69 +32,78 @@ header {
 	display: block;
 	
 }	
+header.abajo{
+	font-size: 5px;
+    font-family: 'Inter', sans-serif;
+	background-color:rgb(154, 9, 154);
+	padding: 5px 5px;
+	
+}
+
+
 
 
 header a {
-    color: white;
-}
+		color: white;
+	}
 
 
 #logo {
+	width: 30%;
     text-decoration: none;
-    width: 30%;
-    font-weight: bold;
-    color: #fff;
-    font-size: 30px;
-    line-height: 60px;
-    float: left;
-    display: inline-block;
+	font-weight: bold;
+	color: #fff;
+	font-size: 30px;
+	line-height: 60px;
+	float: left;
+	display: inline-block;
 }
 
 /*
-* Navegación
-*/
-nav {
-text-align: right;
-display: inline-block;
-line-height: 50px;
-width: 65%;
+ * Navegación
+ */
+ nav {
+	text-align: right;
+	display: inline-block;
+	line-height: 50px;
+	width: 65%;
 }
-nav ul {
-    position: relative;
-    list-style: none;
-    padding-right: 0%;
-}
+	nav ul {
+		position: relative;
+		list-style: none;
+		padding-right: 0%;
+	}
+	
+		nav ul li {
+			position: relative;
+			display: inline-block;
+			line-height: 20%;
+		}
+			
+			nav ul li a {
+				background-color: rgb(201, 76, 201);
+				border-radius: 50px;
+				position: relative;
+				padding: 10px 20px;
+				text-decoration: none;
+				line-height: normal;
+				font-size: 15px;
+				font-weight: bold;
+				-webkit-transition: all 500ms ease ;
+				-o-transition:all 500ms ease ;
+				transition:all 500ms ease ;
+			}
+			
+				nav ul li a:hover {
+					background:  #215a11;
+					border-radius: 50px;
 
-    nav ul li {
-        position: relative;
-        display: inline-block;
-        line-height: 20%;
-    }
-        
-        nav ul li a {
-            background-color: rgb(201, 76, 201);
-            border-radius: 50px;
-            position: relative;
-            padding: 10px 20px;
-            text-decoration: none;
-            line-height: normal;
-            font-size: 15px;
-            font-weight: bold;
-            -webkit-transition: all 500ms ease ;
-            -o-transition:all 500ms ease ;
-            transition:all 500ms ease ;
-        }
-        
-            nav ul li a:hover {
-                background:  #215a11;
-                border-radius: 50px;
+				}
 
-            }
 
 
 
 .titulo h1 {
-    border: solid red;
     font-size: larger;
     background-color: #215a11;
     margin-top: 110px;
@@ -95,48 +112,141 @@ nav ul {
     padding: 10px 10px;
 }
 
+/*
 .noticias {
     border: solid blue;
     display: inline-block;
     text-align: center;
-    padding: 20px 20px;
-}
+
+}*/
 
 .noticia1 {
-    border: solid black;
-    width: 45%;
+    border: solid beige;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
     display: inline-block;
-    padding: 20px 20px;
+    padding: 10px 0;
 }
 
 .noticia2  {
-    border: solid red;
-    width: 45%;
+    border: solid beige;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
     display: inline-block;
-    padding: 20px 20px;
+    padding: 15px 0;
 
 }
 
 .texto {
     font-size: 15px;
+
 }
 
 
 #imagen {
     width: auto;
     height: 300px;
+    padding: 10px 10px;
 
+}
+
+.ver {
+    cursor: pointer;
+    color: blue;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 li {
     list-style: none;
 }
+
+
+/* adaptable a dispositivos móviles*/
+@media screen and (max-width: 600px) {
+	header {
+		display: block;
+		padding: 5px 5px;
+		}
+	#logo {
+		font-size: 15px;
+		width: %;
+		text-align: left;
+		line-height:10px;
+		padding: 10px 10px;
+		display: inline-block;
+	}
+	header nav {
+
+		text-align: right;
+		display: inline-block;
+		width: 55%;
+	}
+	header nav ul  {
+		margin-right: 0%;
+	
+	}
+
+	header nav ul li {
+		margin-right: 0%;
+	}
+
+	header nav ul li a {
+		border-radius: 50px;
+		font-size: 12px;
+		display: inline;
+		padding: 5px 5px;
+		margin-block-end: 0%;
+		-webkit-transition: all 500ms ease ;
+		-o-transition:all 500ms ease ;
+		transition:all 500ms ease ;
+	}
+
+    .titulo {
+        font-size: 12px;
+    }
+	.texto-news {
+		font-size: 10px;
+	}
+    .noticias {
+		font-size: 10px;
+	}
+
+    .noticia1 #imagen {
+        width: 90%;
+        max-width: 200px;
+        height: auto;
+    }
+    .noticia2 #imagen {
+        width: 90%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .noticia1 h2 {
+        font-size: 12px;
+    }
+
+    .noticia2 h2 {
+        font-size: 12px;
+    }
+
+}
+
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
     background-color: rgb(154, 9, 154);
-    
+    margin-bottom: 0%;
 }
 
 .imgf{
     display: flex;
     margin: auto;
+    height: 40px;
+    width: auto;
 }

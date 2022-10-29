@@ -1,17 +1,23 @@
 
 *{
 	margin:0; 
-	padding: 0;
-	font-size: medium;
+
 }
 
+
+html {
+    min-height: 100%;
+    position: relative ;
+}
 
 body{
 	font-family: 'Inter', sans-serif;
 	background-image: url(cancha-fondo.webp);
-	height: 50%;
+	height: 100%;
 	background-position-x: center;
-	
+	background-repeat: no-repeat;
+	margin-bottom: 40px;
+	background-size: cover;
 }
 
 
@@ -257,7 +263,7 @@ header a {
 	width: 90%;
 	max-width: 1000px;
 	overflow: hidden;
-padding: 10px 10px;
+	padding: 10px 10px;
 	} 
 		
 .carrusel ul {
@@ -336,16 +342,17 @@ padding: 10px 10px;
 		}
 	#logo {
 		font-size: 15px;
-		width: 1%;
+		width: %;
 		text-align: left;
 		line-height:10px;
 		padding: 10px 10px;
 		display: inline-block;
 	}
 	header nav {
+
 		text-align: right;
 		display: inline-block;
-		width: 60%;
+		width: 55%;
 	}
 	header nav ul  {
 		margin-right: 0%;
@@ -366,10 +373,6 @@ padding: 10px 10px;
 		-o-transition:all 500ms ease ;
 		transition:all 500ms ease ;
 	}
-		header nav ul li a:hover {
-			background:  #215a11;
-			border-radius: 50px;
-		}
 
 	.reseña {
 		font-size: small;
@@ -404,11 +407,30 @@ padding: 10px 10px;
 		max-height: 150px;
 		object-fit: contain;
 	}
+
+	form{
+		background-color: #215a11;
+		width: 20%;
+		top: 0%;
+		left: 50%;
+		margin: auto;
+		box-shadow: 7px 13px 37px;
+		font-size: 10px;
+	}
+
+	body {
+		background-size: cover;
+	}
 	
+}
+
+/*--------------------termina ADAPTABLE---------------------*/
+
+
 	form{
 		background-color: #215a11;
 		width: 400px;
-		top: 50%;
+		top: 0%;
 		left: 50%;
 		margin: auto;
 		box-shadow: 7px 13px 37px;
@@ -438,20 +460,33 @@ padding: 10px 10px;
 		font-size: 20px;
 		outline: none;
 		color: #fff;
+		text-decoration: none;
 	}
-	
+
+
+
 	.form [type="submit"]{
 		padding: 10px;
 		border: none;
 		color: #fff;
-		background-color: rgb(154, 9, 154);}
-	
-	footer {
 		background-color: rgb(154, 9, 154);
 	}
 	
-	.imgf{
-		display: flex;
-		margin: auto;
+	
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background-color: rgb(154, 9, 154);
+	margin-bottom: 0%;
+	margin-top: 10px;
 	}
-}
+	
+
+		.imgf{
+			display: flex;
+			margin: auto;
+			height: 40px;
+			width: auto;
+		}

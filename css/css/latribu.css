@@ -1,9 +1,187 @@
-footer {
-    background-color: rgb(154, 9, 154);
-    
+*{
+	margin:0; 
 }
 
-.imgf{
-    display: flex;
-    margin: auto;
+
+html {
+    min-height: 100%;
+    position: relative ;
 }
+
+body{
+    margin: 0;
+    margin-bottom: 40px;
+	font-family: 'Playfair Display', serif;
+    background-color: rgb(207, 247, 248);
+}
+
+.descripcion {
+    position: absolute;
+    border: solid black;
+    width: 50%;
+    border-radius: 50px;
+    margin-top: 10%;
+    margin-left: 25%;
+    font-weight: bold;
+    text-align: center;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    padding: 10px 10px;
+    font-size: 15px;
+    display: flex;
+}
+
+.imgn {
+    margin-left: 25%;
+    margin-top: 20%;
+    width: 50%;
+    height: auto;
+}
+
+
+header {
+	font-size: medium;
+    font-family: 'Inter', sans-serif;
+	width: 100%;
+	overflow: hidden;
+	background: rgb(255, 51, 255);
+	height: auto;
+	position: fixed;
+	transition: 0.7s;
+	padding: 30px 30px;
+	z-index:10;
+	display: block;
+	
+}	
+header.abajo{
+	font-size: 5px;
+    font-family: 'Inter', sans-serif;
+	background-color:rgb(154, 9, 154);
+	padding: 5px 5px;
+	
+}
+
+
+header a {
+		color: white;
+	}
+
+
+#logo {
+	width: 30%;
+    text-decoration: none;
+	font-weight: bold;
+	color: black;
+	font-size: 30px;
+	line-height: 60px;
+	float: left;
+	display: inline-block;
+}
+
+/*
+ * Navegación
+ */
+ nav {
+	text-align: right;
+	display: inline-block;
+	line-height: 50px;
+	width: 65%;
+}
+	nav ul {
+		position: relative;
+		list-style: none;
+		padding-right: 0%;
+	}
+	
+		nav ul li {
+			position: relative;
+			display: inline-block;
+			line-height: 20%;
+		}
+			
+			nav ul li a {
+				background-color: rgb(201, 76, 201);
+				border-radius: 50px;
+				position: relative;
+				padding: 10px 20px;
+				text-decoration: none;
+				line-height: normal;
+				font-size: 15px;
+				font-weight: bold;
+				-webkit-transition: all 500ms ease ;
+				-o-transition:all 500ms ease ;
+				transition:all 500ms ease ;
+			}
+			
+nav ul li a:hover {
+					background:  #215a11;
+					border-radius: 50px;
+
+	}
+
+
+
+
+
+ /* adaptable a dispositivos móviles*/
+@media screen and (max-width: 600px) {
+	header {
+		display: block;
+		padding: 5px 5px;
+		}
+	#logo {
+		font-size: 15px;
+		width: %;
+		text-align: left;
+		line-height:10px;
+		padding: 10px 10px;
+		display: inline-block;
+	}
+	header nav {
+
+		text-align: right;
+		display: inline-block;
+		width: 55%;
+	}
+	header nav ul  {
+		margin-right: 0%;
+	
+	}
+
+	header nav ul li {
+		margin-right: 0%;
+	}
+
+	header nav ul li a {
+		border-radius: 50px;
+		font-size: 12px;
+		display: inline;
+		padding: 5px 5px;
+		margin-block-end: 0%;
+		-webkit-transition: all 500ms ease ;
+		-o-transition:all 500ms ease ;
+		transition:all 500ms ease ;
+	}
+
+   
+    }
+
+
+/*------------termina ADAPTABLE----------*/
+
+
+                footer {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 40px;
+                    background-color: rgb(255, 51, 255);
+                    margin-bottom: 0%;
+                }
+                
+                .imgf{
+                    display: flex;
+                    margin: auto;
+                    height: 40px;
+                    width: auto;
+                }
